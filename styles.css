@@ -88,8 +88,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero */
-
 .hero {
     background:
         linear-gradient(
@@ -130,8 +128,6 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* Buttons */
-
 .button {
     display: inline-block;
     padding: 0.8rem 1.2rem;
@@ -147,8 +143,6 @@ h2 {
     background: #d97706;
 }
 
-/* Main content */
-
 main {
     max-width: 1120px;
     margin: auto;
@@ -157,8 +151,6 @@ main {
 section {
     padding: 4rem 1.25rem;
 }
-
-/* About */
 
 .intro {
     display: grid;
@@ -172,8 +164,6 @@ section {
     padding: 1.5rem;
     border-left: 5px solid #0f766e;
 }
-
-/* Services */
 
 .services {
     background: #ffffff;
@@ -196,8 +186,6 @@ section {
 .card span {
     font-size: 2rem;
 }
-
-/* Contact */
 
 .contact {
     display: grid;
@@ -240,8 +228,6 @@ textarea::placeholder {
     margin: 0;
 }
 
-/* Footer */
-
 footer {
     padding: 2rem 1.25rem;
     background: #241b3a;
@@ -261,15 +247,11 @@ footer a {
     color: #bae6fd;
 }
 
-/* Tablet */
-
 @media (max-width: 1024px) {
     .hero-content {
         padding: 5rem 1.25rem;
     }
 }
-
-/* Mobile */
 
 @media (max-width: 600px) {
     .nav-wrap,
