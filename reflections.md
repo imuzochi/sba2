@@ -1,0 +1,3 @@
+1. Accessibility challenges I faced were making sure I remembered to put the ARIA roles in particular on content that couldn't be labeled as specifically as I'd like. Also, with the forms, putting the label, placeholder, and description on each text box was a lot to remember.
+2. I ensured my design was responsive and accessible to all users by having alt text, using rem instead of px, using ARIA labels, color contrasting, using semantic HTML, and flexible CSS, and then testing these components.
+3. The resources I found most helpful were the modules going over this content, the Scrimba course, WebAIM Color Contrast Checker, and HTML/CSS guidelines.
