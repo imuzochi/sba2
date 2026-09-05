@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #241b3a;
+    font: 1rem/1.6 Arial, sans-serif;
+    background: #f8f7fb;
+}
+
+a {
+    color: #075985;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    padding: 0.75rem;
+    background: #ffffff;
+    color: #241b3a;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 10;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.nav-wrap {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: #241b3a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(36, 27, 58, 0.94),
+            rgba(15, 118, 110, 0.72)
+        ),
+        url("https://us.images.westend61.de/0001947520pw/professional-colleagues-celebrating-success-in-a-business-meeting-men-and-women-in-a-corporate-office-happily-clapping-hands-demonstrating-great-teamwork-and-a-positive-work-environment-JLPSF31386.jpg")
+        center / cover;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 1120px;
+    margin: auto;
+    padding: 7rem 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    max-width: 700px;
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-top: 0;
+}
+
+.hero p {
+    max-width: 620px;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.35rem;
+    background: #f59e0b;
+    color: #241b3a;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #d97706;
+}
+
+/* Main content */
+
+main {
+    max-width: 1120px;
+    margin: auto;
+}
+
+section {
+    padding: 4rem 1.25rem;
+}
+
+/* About */
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.intro aside {
+    background: #eef2ff;
+    padding: 1.5rem;
+    border-left: 5px solid #0f766e;
+}
+
+/* Services */
+
+.services {
+    background: #ffffff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(36, 27, 58, 0.12);
+}
+
+.card span {
+    font-size: 2rem;
+}
+
+/* Contact */
+
+.contact {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 3rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+    border: 2px solid #64748b;
+    border-radius: 0.3rem;
+    font: inherit;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #363737;
+}
+
+.help {
+    color: #363737;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 2rem 1.25rem;
+    background: #241b3a;
+    color: #ffffff;
+}
+
+.footer-wrap {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer a {
+    color: #bae6fd;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+    .hero-content {
+        padding: 5rem 1.25rem;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .nav-wrap,
+    .intro,
+    .contact {
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        gap: 0.75rem 1rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 3rem 1.25rem;
+    }
+}

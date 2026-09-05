@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Design Co. | Design for everyone</title>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <div class="nav-wrap">
+            <a class="logo" href="#home" aria-label="Accessible Design Co. home"><img src="https://img.magnific.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80" alt=""> Accessible Design Co.</a>
+            <nav role="navigation" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Better design starts with inclusion.</h1>
+                <p>We create thoughtful, accessible experiences that make it easier for everyone to connect, navigate, and participate.</p>
+                <a class="button" href="#contact">Start a conversation</a>
+            </div>
+        </section>
+        <section class="intro" id="about" aria-labelledby="about-title">
+            <article>
+                <h2 id="about-title">Design that puts people first</h2>
+                <p>Accessible Design Co. works with organizations to build digital products and websites that welcome everyone from day one.
+                We bring together research, strategy, and accessibility best practices to create experiences that actually work.</p>
+                <p>Accessibility shouldn't be something added at the end. It should be part of the design process from the very beginning.</p>
+            </article>
+            <aside>
+                <h3>What we value</h3>
+                <p>Thoughtful decisions, simple experiences, and technology that works for as many people as possible.</p>
+            </aside>
+        </section>
+        <section class="services" id="services" aria-labelledby="services-title">
+            <h2 id="services-title">How we can help</h2>
+            <div class="cards">
+                <article class="card">
+                    <span aria-hidden="true">♿</span>
+                    <h3>Accessibility reviews</h3>
+                    <p>We uncover usability and accessibility issues and provide practical recommendations for making your experience better.</p>
+                </article>
+                <article class="card">
+                    <span aria-hidden="true">✦</span>
+                    <h3>Human-centered UX</h3>
+                    <p>We design clear and flexible interfaces based on real users, their needs, and the way they interact with technology.</p>
+                </article>
+                <article class="card">
+                    <span aria-hidden="true">✓</span>
+                    <h3>Accessible web development</h3>
+                    <p>We build responsive, semantic websites designed to work across browsers, devices, and assistive technologies.</p>
+                </article>
+            </div>
+        </section>
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div>
+                <h2 id="contact-title">Have a project in mind?</h2>
+                <p>We'd love to hear what you're working on. Send us a few details and we'll be in touch.</p>
+            </div>
+            <form
+                aria-label="Contact Accessible Design Co."
+                onsubmit="event.preventDefault(); document.getElementById('form-status').textContent='Thanks! We received your message.';">
+                <div>
+                    <label for="name">Name</label>
+                    <input
+                        id="name"
+                        placeholder="John Doe"
+                        name="name"
+                        type="text"
+                        required
+                        autocomplete="name"
+                        aria-describedby="name-help">
+                    <p class="help" id="name-help">
+                        Enter your first and last name.
+                    </p>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                        id="email"
+                        name="email"
+                        placeholder="john.doe@example.com"
+                        type="email"
+                        required
+                        autocomplete="email">
+                        <p class="help" id="email-help">
+                        Enter your email address.
+                    </p>
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+
+                    <input
+                        id="subject"
+                        name="subject"
+                        placeholder="Upcoming project"
+                        type="text"
+                        required>
+                        <p class="help" id="subject-help">
+                        Enter a subject for your message.
+                    </p>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Enter a message..."
+                        required
+                    ></textarea>
+                    <p class="help" id="message-help">
+                        Enter your message.
+                    </p>
+                </div>
+                <button class="button" type="submit">
+                    Send inquiry
+                </button>
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main> 
+
+    <footer><div class="footer-wrap"><p>© 2026 Accessible Design Co. All rights reserved.</p><p><a href="mailto:hr@accessibledesign.co">hr@accessibledesign.co</a> · (999)-999-999</p><p><a href="#home">LinkedIn</a> · <a href="#home">Instagram</a></p></div></footer>
+</body>
+</html>
